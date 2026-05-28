@@ -41,4 +41,6 @@
            fetch="https://github.com/octavios-plus"
            revision="16"/>
 
+  <include name="system.xml"/>
+
 </manifest>

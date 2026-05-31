@@ -41,6 +41,9 @@
            fetch="https://github.com/octavios-plus"
            revision="16"/>
 
+  <remote  name="octavi-gitlab"
+           fetch="https://gitlab.com/octaviosplus"/>
+
   <include name="system.xml"/>
   <include name="override.xml"/>
   <include name="vendor.xml"/>

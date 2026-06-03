@@ -1,5 +1,7 @@
 # OctaviOS Android Manifest #
 
+![Banner](https://github.com/user-attachments/assets/c77bfc71-86e7-4e2d-b80b-cbeb9d4e32b1)
+
 ### Initialize OctaviOS ###
 
 **Initialize full repository (useful for developers)**

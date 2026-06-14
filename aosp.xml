@@ -4,4 +4,7 @@
   <!-- External -->
   <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" clone-depth="1" />
 
+  <!-- Prebuilts -->
+  <project path="prebuilts/rust" name="platform/prebuilts/rust" remote="aosp" clone-depth="1" />
+
 </manifest>

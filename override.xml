@@ -3,6 +3,7 @@
 
   <!-- AOSP Override -->
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/prebuilts/rust" />
 
   <!-- System Override -->
   <remove-project name="kernel/configs" />

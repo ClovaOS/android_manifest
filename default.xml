@@ -7,7 +7,7 @@
           sync-c="true"
           sync-tags="false"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-16.0.0_r1" />
+          revision="refs/tags/android-17.0.0_r1" />
 
   <!-- CLO -->
   <remote name="clo-la"
@@ -34,12 +34,12 @@
 
   <remote  name="los"
            fetch="https://github.com/LineageOS"
-           revision="lineage-23.0" />
+           revision="lineage-24.0" />
 
   <!-- Octavi -->
   <remote  name="octavi"
            fetch="https://github.com/octavios-plus"
-           revision="16"/>
+           revision="17"/>
 
   <remote  name="octavi-gitlab"
            fetch="https://gitlab.com/octaviosplus"/>

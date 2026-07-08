@@ -6,12 +6,12 @@
 
 **Initialize full repository (useful for developers)**
 ```
-repo init -u https://github.com/OctaviOS-Plus/android_manifest -b 16 --git-lfs
+repo init -u https://github.com/OctaviOS-Plus/android_manifest -b 17 --git-lfs
 ```
 
 **If you want to save space, use this instead**
 ```
-repo init -u https://github.com/OctaviOS-Plus/android_manifest -b 16 --git-lfs --depth 1
+repo init -u https://github.com/OctaviOS-Plus/android_manifest -b 17 --git-lfs --depth 1
 ```
 
 ### Sync Sauce ###

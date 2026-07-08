@@ -23,8 +23,8 @@
   <project path="bootable/recovery" name="android_bootable_recovery" remote="octavi" />
 
   <!-- Device -->
-  <project path="device/octavi/sepolicy/common" name="android_device_octavi_sepolicy" remote="octavi" revision="16-common" />
-  <project path="device/octavi/sepolicy/legacy" name="android_device_octavi_sepolicy" remote="octavi" revision="16-legacy" />
+  <project path="device/octavi/sepolicy/common" name="android_device_octavi_sepolicy" remote="octavi" revision="17-common" />
+  <project path="device/octavi/sepolicy/legacy" name="android_device_octavi_sepolicy" remote="octavi" revision="17-legacy" />
   <project path="device/qcom/common" name="android_device_qcom_common" remote="octavi" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>

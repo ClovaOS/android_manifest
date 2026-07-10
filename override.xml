@@ -21,8 +21,11 @@
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/external/json-c" />
+  <remove-project name="platform/external/libjxl" />
   <remove-project name="platform/external/mksh" />
+  <remove-project name="platform/external/setupcompat" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/external/zstd" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
@@ -30,8 +33,11 @@
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/opt/net/wifi" />
   <remove-project name="platform/frameworks/opt/telephony" />
+  <remove-project name="platform/hardware/broadcom/libbt" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/nxp/nfc" />
+  <remove-project name="platform/hardware/st/nfc" />
   <remove-project name="platform/packages/apps/Dialer" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Messaging" />
@@ -48,12 +54,15 @@
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/media" />
+  <remove-project name="platform/system/memory/libion" />
   <remove-project name="platform/system/memory/lmkd" />
   <remove-project name="platform/system/memory/libmeminfo" />
   <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
+  <remove-project name="platform/system/vold" />
 
   <!-- Vendor Overrides -->
   <remove-project name="device/qcom/sepolicy" />

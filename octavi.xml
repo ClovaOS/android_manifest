@@ -88,6 +88,7 @@
   <project path="system/core" name="android_system_core" remote="octavi" />
   <project path="system/extras" name="android_system_extras" remote="octavi" />
   <project path="system/media" name="android_system_media" remote="octavi" />
+  <project path="system/memory/libdmabufheap" name="android_system_memory_libdmabufheap" remote="octavi" />
   <project path="system/memory/libion" name="android_system_memory_libion" remote="octavi" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="octavi" />
   <project path="system/memory/libmeminfo" name="android_system_memory_libmeminfo" remote="octavi" />

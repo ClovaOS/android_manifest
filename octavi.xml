@@ -42,6 +42,7 @@
   <project path="external/libjxl" name="android_external_libjxl" remote="octavi" />
   <project path="external/mksh" name="android_external_mksh" remote="octavi" />
   <project path="external/setupcompat" name="android_external_setupcompat" remote="octavi" />
+  <project path="external/tinyalsa" name="android_external_tinyalsa" remote="octavi" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="octavi" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="octavi" />
   <project path="external/zstd" name="android_external_zstd" remote="octavi" />

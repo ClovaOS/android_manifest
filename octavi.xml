@@ -18,6 +18,7 @@
 
   <project path="art" name="android_art" remote="octavi" />
   <project path="bionic" name="android_bionic" remote="octavi" />
+  <project path="development" name="android_development" remote="octavi" />
 
   <!-- Bootable -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="octavi" />
@@ -36,14 +37,20 @@
   <project path="external/dng_sdk" name="android_external_dng_sdk" remote="octavi" />
   <project path="external/dtc" name="android_external_dtc" remote="octavi" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="octavi" />
+  <project path="external/freetype" name="android_external_freetype" remote="octavi" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="octavi" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="octavi" />
   <project path="external/json-c" name="android_external_json-c" remote="octavi" />
+  <project path="external/libcupsfilters" name="android_external_libcupsfilters" remote="octavi" />
+  <project path="external/libhevc" name="android_external_libhevc" remote="octavi" />
   <project path="external/libjxl" name="android_external_libjxl" remote="octavi" />
+  <project path="external/libpng" name="android_external_libpng" remote="octavi" />
+  <project path="external/libppd" name="android_external_libppd" remote="octavi" />
   <project path="external/mksh" name="android_external_mksh" remote="octavi" />
   <project path="external/setupcompat" name="android_external_setupcompat" remote="octavi" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" remote="octavi" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="octavi" />
+  <project path="external/v4l2_codec2" name="android_external_v4l2_codec2" remote="octavi" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="octavi" />
   <project path="external/zstd" name="android_external_zstd" remote="octavi" />
 
@@ -57,9 +64,11 @@
 
   <!-- Hardware -->
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="octavi" />
+  <project path="hardware/google/camera" name="android_hardware_google_camera" remote="octavi" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="octavi" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="octavi" />
   <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="octavi" />
+  <project path="hardware/nxp/secure_element" name="android_hardware_nxp_secure_element" remote="octavi" />
   <project path="hardware/octavi/interfaces" name="android_hardware_octavi_interfaces" remote="octavi" />
   <project path="hardware/st/nfc" name="android_hardware_st_nfc" remote="octavi" />
 
@@ -67,22 +76,44 @@
   <project path="kernel/configs" name="android_kernel_configs" remote="octavi" />
 
   <!-- Packages -->
+  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="octavi" />
+  <project path="packages/apps/ContactsPicker" name="android_packages_apps_ContactsPicker" remote="octavi" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="octavi" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="octavi" />
+  <project path="packages/apps/EmergencyInfo" name="android_packages_apps_EmergencyInfo" remote="octavi" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="octavi" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="octavi" />
   <project path="packages/apps/OctaviLab" name="android_packages_apps_OctaviLab" remote="octavi" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="octavi" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="octavi" />
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="octavi" />
+  <project path="packages/apps/Tag" name="android_packages_apps_Tag" remote="octavi" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="octavi" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="octavi" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="octavi" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="octavi" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="octavi" />
   <project path="packages/modules/Nfc" name="android_packages_modules_Nfc" remote="octavi" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="octavi" />
   <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" remote="octavi" />
+  <project path="packages/modules/Telephony" name="android_packages_modules_Telephony" remote="octavi" />
+  <project path="packages/modules/Uwb" name="android_packages_modules_Uwb" remote="octavi" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="octavi" />
+  <project path="packages/providers/BlockedNumberProvider" name="android_packages_providers_BlockedNumberProvider" remote="octavi" />
+  <project path="packages/providers/BookmarkProvider" name="android_packages_providers_BookmarkProvider" remote="octavi" />
+  <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" remote="octavi" />
+  <project path="packages/providers/CallLogProvider" name="android_packages_providers_CallLogProvider" remote="octavi" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="octavi" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="octavi" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="octavi" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="octavi" />
+  <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" remote="octavi" />
+  <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="octavi" />
   <project path="packages/services/DeviceAsWebcam" name="android_packages_services_DeviceAsWebcam" remote="octavi" />
+  <project path="packages/services/Mms" name="android_packages_services_Mms" remote="octavi" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="octavi" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="octavi" />
+  <project path="packages/wallpapers/LivePicker" name="android_packages_wallpapers_LivePicker" remote="octavi" />
 
   <!-- System -->
   <project path="system/bpf" name="android_system_bpf" remote="octavi" />
@@ -90,7 +121,10 @@
   <project path="system/core" name="android_system_core" remote="octavi" />
   <project path="system/extras" name="android_system_extras" remote="octavi" />
   <project path="system/fs/fs_mgr" name="android_system_fs_fs_mgr" remote="octavi" />
+  <project path="system/libfmq" name="android_system_libfmq" remote="octavi" />
+  <project path="system/libufdt" name="android_system_libufdt" remote="octavi" />
   <project path="system/libziparchive" name="android_system_libziparchive" remote="octavi" />
+  <project path="system/logging" name="android_system_logging" remote="octavi" />
   <project path="system/media" name="android_system_media" remote="octavi" />
   <project path="system/memory/libdmabufheap" name="android_system_memory_libdmabufheap" remote="octavi" />
   <project path="system/memory/libion" name="android_system_memory_libion" remote="octavi" />

@@ -15,6 +15,7 @@
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="los" />
   <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" remote="los" />
   <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="octavi" />
+  <project path="hardware/lineage/generic-ims" name="android_hardware_lineage_generic-ims" remote="los" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
 
   <!-- Misc -->

@@ -30,6 +30,7 @@
   </project>
 
   <!-- External -->
+  <project path="external/aac" name="android_external_aac" remote="octavi" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="octavi" />
   <project path="external/avb" name="android_external_avb" remote="octavi" />
   <project path="external/bouncycastle" name="android_external_bouncycastle" remote="octavi" />
@@ -39,11 +40,13 @@
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="octavi" />
   <project path="external/freetype" name="android_external_freetype" remote="octavi" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="octavi" />
+  <project path="external/hplip" name="android_external_hplip" remote="octavi" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="octavi" />
   <project path="external/json-c" name="android_external_json-c" remote="octavi" />
   <project path="external/libcupsfilters" name="android_external_libcupsfilters" remote="octavi" />
   <project path="external/libhevc" name="android_external_libhevc" remote="octavi" />
   <project path="external/libjxl" name="android_external_libjxl" remote="octavi" />
+  <project path="external/libopenapv" name="android_external_libopenapv" remote="octavi" />
   <project path="external/libpng" name="android_external_libpng" remote="octavi" />
   <project path="external/libppd" name="android_external_libppd" remote="octavi" />
   <project path="external/mksh" name="android_external_mksh" remote="octavi" />
@@ -51,6 +54,7 @@
   <project path="external/setupcompat" name="android_external_setupcompat" remote="octavi" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" remote="octavi" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="octavi" />
+  <project path="external/tremolo" name="android_external_tremolo" remote="octavi" />
   <project path="external/v4l2_codec2" name="android_external_v4l2_codec2" remote="octavi" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="octavi" />
   <project path="external/zstd" name="android_external_zstd" remote="octavi" />
@@ -85,6 +89,7 @@
   <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="octavi" />
   <project path="packages/apps/EmergencyInfo" name="android_packages_apps_EmergencyInfo" remote="octavi" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="octavi" />
+  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="octavi" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="octavi" />
   <project path="packages/apps/OctaviLab" name="android_packages_apps_OctaviLab" remote="octavi" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="octavi" />
@@ -97,8 +102,11 @@
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="octavi" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="octavi" />
   <project path="packages/modules/ImsMedia" name="android_packages_modules_ImsMedia" remote="octavi" />
+  <project path="packages/modules/IntentResolver" name="android_packages_modules_IntentResolver" remote="octavi" />
+  <project path="packages/modules/NeuralNetworks" name="android_packages_modules_NeuralNetworks" remote="octavi" />
   <project path="packages/modules/Nfc" name="android_packages_modules_Nfc" remote="octavi" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="octavi" />
+  <project path="packages/modules/Profiling" name="android_packages_modules_Profiling" remote="octavi" />
   <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" remote="octavi" />
   <project path="packages/modules/Telephony" name="android_packages_modules_Telephony" remote="octavi" />
   <project path="packages/modules/Uwb" name="android_packages_modules_Uwb" remote="octavi" />
@@ -114,6 +122,7 @@
   <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" remote="octavi" />
   <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="octavi" />
   <project path="packages/services/DeviceAsWebcam" name="android_packages_services_DeviceAsWebcam" remote="octavi" />
+  <project path="packages/services/Iwlan" name="android_packages_services_Iwlan" remote="octavi" />
   <project path="packages/services/Mms" name="android_packages_services_Mms" remote="octavi" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="octavi" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="octavi" />
@@ -140,6 +149,9 @@
   <project path="system/update_engine" name="android_system_update_engine" remote="octavi" />
   <project path="system/usb" name="android_system_usb" remote="octavi" />
   <project path="system/vold" name="android_system_vold" remote="octavi" />
+
+  <!-- Trusty -->
+  <project path="trusty/user/base" name="android_trusty_user_base" remote="octavi" />
 
   <!-- Vendor -->
   <project path="vendor/octavi" name="android_vendor_octavi" remote="octavi" />

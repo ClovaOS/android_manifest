@@ -47,6 +47,7 @@
   <project path="external/libpng" name="android_external_libpng" remote="octavi" />
   <project path="external/libppd" name="android_external_libppd" remote="octavi" />
   <project path="external/mksh" name="android_external_mksh" remote="octavi" />
+  <project path="external/selinux" name="android_external_selinux" remote="octavi" />
   <project path="external/setupcompat" name="android_external_setupcompat" remote="octavi" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" remote="octavi" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="octavi" />

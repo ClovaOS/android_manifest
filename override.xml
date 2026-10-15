@@ -38,12 +38,14 @@
   <remove-project name="platform/external/zstd" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/hardware/interfaces" />
   <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/opt/net/wifi" />
   <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/hardware/broadcom/libbt" />
   <remove-project name="platform/hardware/google/camera" />
+  <remove-project name="platform/hardware/google/interfaces" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/nxp/nfc" />
@@ -106,6 +108,7 @@
   <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
+  <remove-project name="platform/system/usb" />
   <remove-project name="platform/system/vold" />
 
   <!-- Vendor Overrides -->

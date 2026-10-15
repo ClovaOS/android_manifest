@@ -57,6 +57,7 @@
   <!-- Framework -->
   <project path="frameworks/av" name="android_frameworks_av" remote="octavi" />
   <project path="frameworks/base" name="android_frameworks_base" remote="octavi" />
+  <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="octavi" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="octavi" />
   <project path="frameworks/native" name="android_frameworks_native" remote="octavi" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="octavi" />
@@ -65,6 +66,7 @@
   <!-- Hardware -->
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="octavi" />
   <project path="hardware/google/camera" name="android_hardware_google_camera" remote="octavi" />
+  <project path="hardware/google/interfaces" name="android_hardware_google_interfaces" remote="octavi" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="octavi" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="octavi" />
   <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="octavi" />
@@ -134,6 +136,7 @@
   <project path="system/netd" name="android_system_netd" remote="octavi" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="octavi" />
   <project path="system/update_engine" name="android_system_update_engine" remote="octavi" />
+  <project path="system/usb" name="android_system_usb" remote="octavi" />
   <project path="system/vold" name="android_system_vold" remote="octavi" />
 
   <!-- Vendor -->

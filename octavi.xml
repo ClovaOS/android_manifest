@@ -34,6 +34,7 @@
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="octavi" />
   <project path="external/avb" name="android_external_avb" remote="octavi" />
   <project path="external/bouncycastle" name="android_external_bouncycastle" remote="octavi" />
+  <project path="external/conscrypt" name="android_external_conscrypt" remote="octavi" />
   <project path="external/dng_sdk" name="android_external_dng_sdk" remote="octavi" />
   <project path="external/dtc" name="android_external_dtc" remote="octavi" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="octavi" />
@@ -121,6 +122,7 @@
 
   <!-- System -->
   <project path="system/bpf" name="android_system_bpf" remote="octavi" />
+  <project path="system/ca-certificates" name="android_system_ca-certificates" remote="octavi" />
   <project path="system/chre" name="android_system_chre" remote="octavi" />
   <project path="system/core" name="android_system_core" remote="octavi" />
   <project path="system/extras" name="android_system_extras" remote="octavi" />

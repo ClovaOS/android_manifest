@@ -70,6 +70,7 @@
 
   <!-- Hardware -->
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="octavi" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="octavi" />
   <project path="hardware/google/camera" name="android_hardware_google_camera" remote="octavi" />
   <project path="hardware/google/interfaces" name="android_hardware_google_interfaces" remote="octavi" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="octavi" />

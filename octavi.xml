@@ -135,6 +135,7 @@
   <project path="system/core" name="android_system_core" remote="octavi" />
   <project path="system/extras" name="android_system_extras" remote="octavi" />
   <project path="system/fs/fs_mgr" name="android_system_fs_fs_mgr" remote="octavi" />
+  <project path="system/gsid" name="android_system_gsid" remote="octavi" />
   <project path="system/libfmq" name="android_system_libfmq" remote="octavi" />
   <project path="system/libufdt" name="android_system_libufdt" remote="octavi" />
   <project path="system/libziparchive" name="android_system_libziparchive" remote="octavi" />

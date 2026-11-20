@@ -50,7 +50,7 @@
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="clova" revision="6b8940fce5a9952f581a4ffa6e335b27dfdfc07a" />
   <project path="external/zstd" name="android_external_zstd" remote="clova" revision="17.0" />
   <project path="frameworks/av" name="android_frameworks_av" remote="clova" revision="7000492f509f1e1396a3a0977d8272f87e847ac9" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="clova" revision="b8217e095f981161ec715efd11fc9ab6143e0f4f" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="clova" />
   <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="clova" revision="17.0" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="clova" revision="17.0" />
   <project path="frameworks/native" name="android_frameworks_native" remote="clova" revision="b8e53c6974d2e383eed9dac84f7c703613754262" />

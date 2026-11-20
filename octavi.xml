@@ -134,6 +134,7 @@
   <project path="system/vold" name="android_system_vold" remote="clova" revision="17.0" />
   <project path="trusty/user/base" name="android_trusty_user_base" remote="clova" revision="e957c24ccd29638ec03946b1eeae3605d8f715ed" />
   <project path="vendor/clova" name="android_vendor_clova" remote="clova" revision="17.0" />
+  <project path="vendor/ota" name="android_vendor_ota" remote="clova" revision="17.0" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="octavi" />
   <project name="android_external_zlib" path="external/zlib" remote="clova" revision="1d8c0618c842acd2ab59ae90e4b26f70b9a6b01f" />
 </manifest>

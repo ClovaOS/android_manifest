@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <manifest>
-
-  <!-- Build -->
-  <project path="build/make" name="android_build_make" remote="octavi" >
+  <project path="build/make" name="android_build_make" remote="clova" revision="904161a40978fbdc1471f3fa690ff7e88660d300">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -11,152 +9,131 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" remote="octavi" >
+  <project path="build/soong" name="android_build_soong" remote="clova" revision="17.0">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-
-  <project path="art" name="android_art" remote="octavi" />
-  <project path="bionic" name="android_bionic" remote="octavi" />
-  <project path="development" name="android_development" remote="octavi" />
-
-  <!-- Bootable -->
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="octavi" />
-
-  <!-- Device -->
-  <project path="device/octavi/sepolicy" name="android_device_octavi_sepolicy" remote="octavi" revision="17" />
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="octavi" >
-    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  <project path="art" name="android_art" remote="clova" revision="93963645b9251004a4f0d8c4ec33f4c5efe2325a" />
+  <project path="bionic" name="android_bionic" remote="clova" revision="26f46da2503a2c37c0f71abcd5791fac9e45ebbf" />
+  <project path="development" name="android_development" remote="clova" revision="44b832cd216dcdfdcf84dc71ee7b294e5e423bd1" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="clova" revision="17.0" />
+  <project path="device/clova/sepolicy" name="android_device_clova_sepolicy" remote="clova" revision="17.0" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="clova" revision="17.0">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk" />
   </project>
-
-  <!-- External -->
-  <project path="external/aac" name="android_external_aac" remote="octavi" />
-  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="octavi" />
-  <project path="external/avb" name="android_external_avb" remote="octavi" />
-  <project path="external/bouncycastle" name="android_external_bouncycastle" remote="octavi" />
-  <project path="external/conscrypt" name="android_external_conscrypt" remote="octavi" />
-  <project path="external/dng_sdk" name="android_external_dng_sdk" remote="octavi" />
-  <project path="external/dtc" name="android_external_dtc" remote="octavi" />
-  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="octavi" />
-  <project path="external/freetype" name="android_external_freetype" remote="octavi" />
-  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="octavi" />
-  <project path="external/hplip" name="android_external_hplip" remote="octavi" />
+  <project path="external/aac" name="android_external_aac" remote="clova" revision="b1a86fc3d965e593468af2f310e8b28db9ef82e0" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="clova" revision="17.0" />
+  <project path="external/avb" name="android_external_avb" remote="clova" revision="15bc4b45a41ec2dcb83763d7c29efba579bb033e" />
+  <project path="external/bouncycastle" name="android_external_bouncycastle" remote="clova" revision="17.0" />
+  <project path="external/conscrypt" name="android_external_conscrypt" remote="clova" revision="17.0" />
+  <project path="external/dng_sdk" name="android_external_dng_sdk" remote="clova" revision="17.0" />
+  <project path="external/dtc" name="android_external_dtc" remote="clova" revision="17.0" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="clova" revision="17.0" />
+  <project path="external/freetype" name="android_external_freetype" remote="clova" revision="f79712d221fca733427e982697d7172190a183c4" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="clova" revision="17.0" />
+  <project path="external/hplip" name="android_external_hplip" remote="clova" revision="15a5f7bbbdfd1688d457a19147050c0823aa1b23" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="octavi" />
-  <project path="external/json-c" name="android_external_json-c" remote="octavi" />
-  <project path="external/libcupsfilters" name="android_external_libcupsfilters" remote="octavi" />
-  <project path="external/libhevc" name="android_external_libhevc" remote="octavi" />
-  <project path="external/libjxl" name="android_external_libjxl" remote="octavi" />
-  <project path="external/libopenapv" name="android_external_libopenapv" remote="octavi" />
-  <project path="external/libpng" name="android_external_libpng" remote="octavi" />
-  <project path="external/libppd" name="android_external_libppd" remote="octavi" />
-  <project path="external/mksh" name="android_external_mksh" remote="octavi" />
-  <project path="external/selinux" name="android_external_selinux" remote="octavi" />
-  <project path="external/setupcompat" name="android_external_setupcompat" remote="octavi" />
-  <project path="external/tinyalsa" name="android_external_tinyalsa" remote="octavi" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="octavi" />
-  <project path="external/tremolo" name="android_external_tremolo" remote="octavi" />
-  <project path="external/v4l2_codec2" name="android_external_v4l2_codec2" remote="octavi" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="octavi" />
-  <project path="external/zstd" name="android_external_zstd" remote="octavi" />
-
-  <!-- Framework -->
-  <project path="frameworks/av" name="android_frameworks_av" remote="octavi" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="octavi" />
-  <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="octavi" />
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="octavi" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="octavi" />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="octavi" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="octavi" />
-
-  <!-- Hardware -->
-  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="octavi" />
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="octavi" />
-  <project path="hardware/google/camera" name="android_hardware_google_camera" remote="octavi" />
-  <project path="hardware/google/interfaces" name="android_hardware_google_interfaces" remote="octavi" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="octavi" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="octavi" />
-  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="octavi" />
-  <project path="hardware/nxp/secure_element" name="android_hardware_nxp_secure_element" remote="octavi" />
-  <project path="hardware/octavi/interfaces" name="android_hardware_octavi_interfaces" remote="octavi" />
-  <project path="hardware/st/nfc" name="android_hardware_st_nfc" remote="octavi" />
-
-  <!-- Kernel -->
-  <project path="kernel/configs" name="android_kernel_configs" remote="octavi" />
-
-  <!-- Packages -->
-  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="octavi" />
-  <project path="packages/apps/ContactsPicker" name="android_packages_apps_ContactsPicker" remote="octavi" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="octavi" />
-  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="octavi" />
-  <project path="packages/apps/EmergencyInfo" name="android_packages_apps_EmergencyInfo" remote="octavi" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="octavi" />
-  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="octavi" />
-  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="octavi" />
-  <project path="packages/apps/OctaviLab" name="android_packages_apps_OctaviLab" remote="octavi" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="octavi" />
-  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="octavi" />
-  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="octavi" />
-  <project path="packages/apps/Tag" name="android_packages_apps_Tag" remote="octavi" />
-  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="octavi" />
-  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="octavi" />
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="octavi" />
-  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="octavi" />
-  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="octavi" />
-  <project path="packages/modules/ImsMedia" name="android_packages_modules_ImsMedia" remote="octavi" />
-  <project path="packages/modules/IntentResolver" name="android_packages_modules_IntentResolver" remote="octavi" />
-  <project path="packages/modules/NeuralNetworks" name="android_packages_modules_NeuralNetworks" remote="octavi" />
-  <project path="packages/modules/Nfc" name="android_packages_modules_Nfc" remote="octavi" />
-  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="octavi" />
-  <project path="packages/modules/Profiling" name="android_packages_modules_Profiling" remote="octavi" />
-  <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" remote="octavi" />
-  <project path="packages/modules/Telephony" name="android_packages_modules_Telephony" remote="octavi" />
-  <project path="packages/modules/Uwb" name="android_packages_modules_Uwb" remote="octavi" />
-  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="octavi" />
-  <project path="packages/providers/BlockedNumberProvider" name="android_packages_providers_BlockedNumberProvider" remote="octavi" />
-  <project path="packages/providers/BookmarkProvider" name="android_packages_providers_BookmarkProvider" remote="octavi" />
-  <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" remote="octavi" />
-  <project path="packages/providers/CallLogProvider" name="android_packages_providers_CallLogProvider" remote="octavi" />
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="octavi" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="octavi" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="octavi" />
-  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="octavi" />
-  <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" remote="octavi" />
-  <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="octavi" />
-  <project path="packages/services/DeviceAsWebcam" name="android_packages_services_DeviceAsWebcam" remote="octavi" />
-  <project path="packages/services/Iwlan" name="android_packages_services_Iwlan" remote="octavi" />
-  <project path="packages/services/Mms" name="android_packages_services_Mms" remote="octavi" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="octavi" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="octavi" />
-  <project path="packages/wallpapers/LivePicker" name="android_packages_wallpapers_LivePicker" remote="octavi" />
-
-  <!-- System -->
-  <project path="system/bpf" name="android_system_bpf" remote="octavi" />
-  <project path="system/ca-certificates" name="android_system_ca-certificates" remote="octavi" />
-  <project path="system/chre" name="android_system_chre" remote="octavi" />
-  <project path="system/core" name="android_system_core" remote="octavi" />
-  <project path="system/extras" name="android_system_extras" remote="octavi" />
-  <project path="system/fs/fs_mgr" name="android_system_fs_fs_mgr" remote="octavi" />
-  <project path="system/gsid" name="android_system_gsid" remote="octavi" />
-  <project path="system/libfmq" name="android_system_libfmq" remote="octavi" />
-  <project path="system/libufdt" name="android_system_libufdt" remote="octavi" />
-  <project path="system/libziparchive" name="android_system_libziparchive" remote="octavi" />
-  <project path="system/logging" name="android_system_logging" remote="octavi" />
-  <project path="system/media" name="android_system_media" remote="octavi" />
-  <project path="system/memory/libdmabufheap" name="android_system_memory_libdmabufheap" remote="octavi" />
-  <project path="system/memory/libion" name="android_system_memory_libion" remote="octavi" />
-  <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="octavi" />
-  <project path="system/memory/libmeminfo" name="android_system_memory_libmeminfo" remote="octavi" />
-  <project path="system/netd" name="android_system_netd" remote="octavi" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="octavi" />
-  <project path="system/update_engine" name="android_system_update_engine" remote="octavi" />
-  <project path="system/usb" name="android_system_usb" remote="octavi" />
-  <project path="system/vold" name="android_system_vold" remote="octavi" />
-
-  <!-- Trusty -->
-  <project path="trusty/user/base" name="android_trusty_user_base" remote="octavi" />
-
-  <!-- Vendor -->
-  <project path="vendor/octavi" name="android_vendor_octavi" remote="octavi" />
+  <project path="external/json-c" name="android_external_json-c" remote="clova" revision="17.0" />
+  <project path="external/libcupsfilters" name="android_external_libcupsfilters" remote="clova" revision="ec413dc37e1dc04a4a37e609848c4d28f66642dc" />
+  <project path="external/libhevc" name="android_external_libhevc" remote="clova" revision="ed089a4db0beedb6e63034fc402b3a2eaff4c6f6" />
+  <project path="external/libjxl" name="android_external_libjxl" remote="clova" revision="0b40013616665eb215f961641877a2ed6427a13a" />
+  <project path="external/libopenapv" name="android_external_libopenapv" remote="clova" revision="39ab9aae1133959e95e99a9058195915e74effea" />
+  <project path="external/libpng" name="android_external_libpng" remote="clova" revision="46612260e6c7cd325ae761ebad41b6fd7ef2bd6e" />
+  <project path="external/libppd" name="android_external_libppd" remote="clova" revision="1cb85a46907b2135c6aeb7f7e76d466d8355cb9e" />
+  <project path="external/mksh" name="android_external_mksh" remote="clova" revision="17.0" />
+  <project path="external/selinux" name="android_external_selinux" remote="clova" revision="17.0" />
+  <project path="external/setupcompat" name="android_external_setupcompat" remote="clova" revision="17.0" />
+  <project path="external/tinyalsa" name="android_external_tinyalsa" remote="clova" revision="17.0" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="clova" revision="17.0" />
+  <project path="external/tremolo" name="android_external_tremolo" remote="clova" revision="87bfd856524ca01415ccf531a6d85339710c593b" />
+  <project path="external/v4l2_codec2" name="android_external_v4l2_codec2" remote="clova" revision="17.0" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="clova" revision="6b8940fce5a9952f581a4ffa6e335b27dfdfc07a" />
+  <project path="external/zstd" name="android_external_zstd" remote="clova" revision="17.0" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="clova" revision="7000492f509f1e1396a3a0977d8272f87e847ac9" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="clova" revision="b8217e095f981161ec715efd11fc9ab6143e0f4f" />
+  <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="clova" revision="17.0" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="clova" revision="17.0" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="clova" revision="b8e53c6974d2e383eed9dac84f7c703613754262" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="clova" revision="17.0" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="clova" revision="44545e3ea7af1f38299bac25568acf625f1b1450" />
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="clova" revision="17.0" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="clova" revision="17.0" />
+  <project path="hardware/google/camera" name="android_hardware_google_camera" remote="clova" revision="17.0" />
+  <project path="hardware/google/interfaces" name="android_hardware_google_interfaces" remote="clova" revision="17.0" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="clova" revision="44536da06a1c6f772a7dc5c541f900ff9807b0d8" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="clova" revision="17.0" />
+  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="clova" revision="592eef758c66327fcdcb3654d170d5dd8afb92fa" />
+  <project path="hardware/nxp/secure_element" name="android_hardware_nxp_secure_element" remote="clova" revision="4ab62b0b6fe2ed78ec662983dfa55e5c975ec890" />
+  <project path="hardware/octavi/interfaces" name="android_hardware_octavi_interfaces" remote="clova" revision="17.0" />
+  <project path="hardware/st/nfc" name="android_hardware_st_nfc" remote="clova" revision="a51b30f9d6e8c0def76a50180e9c7ade32becdd6" />
+  <project path="kernel/configs" name="android_kernel_configs" remote="clova" revision="17.0" />
+  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="clova" revision="17.0" />
+  <project path="packages/apps/ContactsPicker" name="android_packages_apps_ContactsPicker" remote="clova" revision="18552bceec111ab20c19b1abd28284e091d105d2" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="clova" revision="17.0" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="clova" revision="17.0" />
+  <project path="packages/apps/EmergencyInfo" name="android_packages_apps_EmergencyInfo" remote="clova" revision="17.0" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="clova" revision="17.0" />
+  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="clova" revision="8fc24646cedc8d1e6f4b3bf4edacdf97415ff9d7" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="clova" revision="17.0" />
+  <project path="packages/apps/OctaviLab" name="android_packages_apps_OctaviLab" remote="clova" revision="17.0" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="clova" revision="1e2b6a946e4ad55df07f608b9f4d78cb8210caa3" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="clova" revision="17.0" />
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="clova" revision="17.0" />
+  <project path="packages/apps/Tag" name="android_packages_apps_Tag" remote="clova" revision="17.0" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="clova" revision="17.0" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="clova" revision="17.0" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="clova" revision="17.0" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="clova" revision="867ddb0d941b3a3cbbf6140718c63d572166bb26" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="clova" revision="3e02c4928f77eeda60fb1549e307968583033b0b" />
+  <project path="packages/modules/ImsMedia" name="android_packages_modules_ImsMedia" remote="clova" revision="17.0" />
+  <project path="packages/modules/IntentResolver" name="android_packages_modules_IntentResolver" remote="clova" revision="a41ecf9c4409b3299974f272b3c290b789250b96" />
+  <project path="packages/modules/NeuralNetworks" name="android_packages_modules_NeuralNetworks" remote="clova" revision="9088ed0a03751e5a9d9ecef4b3aa45094390f1d6" />
+  <project path="packages/modules/Nfc" name="android_packages_modules_Nfc" remote="clova" revision="a7ad6ee6b3001c10079a397ffee17482ac5b054e" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="clova" revision="17.0" />
+  <project path="packages/modules/Profiling" name="android_packages_modules_Profiling" remote="clova" revision="6ca70a4aeb322133febffd7a595cfafd194166ef" />
+  <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" remote="clova" revision="17.0" />
+  <project path="packages/modules/Telephony" name="android_packages_modules_Telephony" remote="clova" revision="2f4993f25c5a75c3156a897a95ff7c317f612406" />
+  <project path="packages/modules/Uwb" name="android_packages_modules_Uwb" remote="clova" revision="87b0624927a4f4c58feae3fa9daa1aaa636e84c9" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="clova" revision="fbaca09b9075659c55b11a80905d6e15c63d74eb" />
+  <project path="packages/providers/BlockedNumberProvider" name="android_packages_providers_BlockedNumberProvider" remote="clova" revision="17.0" />
+  <project path="packages/providers/BookmarkProvider" name="android_packages_providers_BookmarkProvider" remote="clova" revision="17.0" />
+  <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" remote="clova" revision="17.0" />
+  <project path="packages/providers/CallLogProvider" name="android_packages_providers_CallLogProvider" remote="clova" revision="17.0" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="clova" revision="8d7a5045c105c71f7a865beef26aa1a579b6ec2a" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="clova" revision="78d2bcb5a001156bcb6101150e83c8da9b1b25b1" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="clova" revision="7c8a198beca044f7b11863310a94d5178e1509d9" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="clova" revision="dd7b1b3b8e83bd3704166286a9a1a6326afd381b" />
+  <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" remote="clova" revision="17.0" />
+  <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="clova" revision="6a16345ec22ef46954cb733b7bd948f07a9049bb" />
+  <project path="packages/services/DeviceAsWebcam" name="android_packages_services_DeviceAsWebcam" remote="clova" revision="17.0" />
+  <project path="packages/services/Iwlan" name="android_packages_services_Iwlan" remote="clova" revision="9f5ffb0cc4352e81c572efed2fee55fe06a51929" />
+  <project path="packages/services/Mms" name="android_packages_services_Mms" remote="clova" revision="b615b6c20b2cf7f90c576fd78c2290c9e1f30512" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="clova" revision="4216f1d276f5e6b008790831269ab110fc540a99" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="clova" revision="6fd33212fc4b298d1885b759ed97c3a3b569c80b" />
+  <project path="packages/wallpapers/LivePicker" name="android_packages_wallpapers_LivePicker" remote="clova" revision="17.0" />
+  <project path="system/bpf" name="android_system_bpf" remote="clova" revision="17.0" />
+  <project path="system/ca-certificates" name="android_system_ca-certificates" remote="clova" revision="17.0" />
+  <project path="system/chre" name="android_system_chre" remote="clova" revision="17.0" />
+  <project path="system/core" name="android_system_core" remote="clova" revision="e8627a55d7d021a2f980e7b79b32ae64b859940d" />
+  <project path="system/extras" name="android_system_extras" remote="clova" revision="17.0" />
+  <project path="system/fs/fs_mgr" name="android_system_fs_fs_mgr" remote="clova" revision="add9c7a166ab2b116fd09f295031dee0eeb166ec" />
+  <project path="system/gsid" name="android_system_gsid" remote="clova" revision="17.0" />
+  <project path="system/libfmq" name="android_system_libfmq" remote="clova" revision="8d706b1154374625143fc98665ceca54b37fae4a" />
+  <project path="system/libufdt" name="android_system_libufdt" remote="clova" revision="20b1f68caf632f29efa92e59a595e76802e9efc8" />
+  <project path="system/libziparchive" name="android_system_libziparchive" remote="clova" revision="17.0" />
+  <project path="system/logging" name="android_system_logging" remote="clova" revision="17.0" />
+  <project path="system/media" name="android_system_media" remote="clova" revision="17.0" />
+  <project path="system/memory/libdmabufheap" name="android_system_memory_libdmabufheap" remote="clova" revision="17.0" />
+  <project path="system/memory/libion" name="android_system_memory_libion" remote="clova" revision="17.0" />
+  <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="clova" revision="17.0" />
+  <project path="system/memory/libmeminfo" name="android_system_memory_libmeminfo" remote="clova" revision="17.0" />
+  <project path="system/netd" name="android_system_netd" remote="clova" revision="17.0" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="clova" revision="50ce9c8944c0134750bdcb87bb034c7ed40346d9" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="clova" revision="17.0" />
+  <project path="system/usb" name="android_system_usb" remote="clova" revision="17.0" />
+  <project path="system/vold" name="android_system_vold" remote="clova" revision="17.0" />
+  <project path="trusty/user/base" name="android_trusty_user_base" remote="clova" revision="e957c24ccd29638ec03946b1eeae3605d8f715ed" />
+  <project path="vendor/clova" name="android_vendor_clova" remote="clova" revision="17.0" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="octavi" />
-
+  <project name="android_external_zlib" path="external/zlib" remote="clova" revision="1d8c0618c842acd2ab59ae90e4b26f70b9a6b01f" />
 </manifest>

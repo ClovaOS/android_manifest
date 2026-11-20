@@ -1,17 +1,15 @@
-# OctaviOS Android Manifest #
+# ClovaOS Android Manifest #
 
-![Banner](https://github.com/user-attachments/assets/c77bfc71-86e7-4e2d-b80b-cbeb9d4e32b1)
-
-### Initialize OctaviOS ###
+### Initialize ClovaOS ###
 
 **Initialize full repository (useful for developers)**
 ```
-repo init -u https://github.com/OctaviOS-Plus/android_manifest -b 17 --git-lfs
+repo init -u https://github.com/ClovaOS/android_manifest -b 17.0 --git-lfs
 ```
 
 **If you want to save space, use this instead**
 ```
-repo init -u https://github.com/OctaviOS-Plus/android_manifest -b 17 --git-lfs --depth 1
+repo init -u https://github.com/ClovaOS/android_manifest -b 17.0 --git-lfs --depth 1
 ```
 
 ### Sync Sauce ###

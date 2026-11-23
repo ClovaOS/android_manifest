@@ -64,7 +64,7 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="clova" revision="17.0" />
   <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="clova" revision="592eef758c66327fcdcb3654d170d5dd8afb92fa" />
   <project path="hardware/nxp/secure_element" name="android_hardware_nxp_secure_element" remote="clova" revision="4ab62b0b6fe2ed78ec662983dfa55e5c975ec890" />
-  <project path="hardware/octavi/interfaces" name="android_hardware_octavi_interfaces" remote="clova" revision="17.0" />
+  <project path="hardware/clova/interfaces" name="android_hardware_clova_interfaces" remote="clova" revision="17.0" />
   <project path="hardware/st/nfc" name="android_hardware_st_nfc" remote="clova" revision="a51b30f9d6e8c0def76a50180e9c7ade32becdd6" />
   <project path="kernel/configs" name="android_kernel_configs" remote="clova" revision="17.0" />
   <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="clova" revision="17.0" />
